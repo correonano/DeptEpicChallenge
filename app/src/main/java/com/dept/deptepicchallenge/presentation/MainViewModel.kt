@@ -53,7 +53,7 @@ class MainViewModel @Inject constructor(
 
     @VisibleForTesting
     fun fetchImageList(date: String) {
-        viewModelScope.launch(Dispatchers.IO) {
+        viewModelScope.launch(Dispatchers.IO + coroutineExceptionHanlder) {
             val images = epicDetailDomain.getEpicDetails(date)
             withContext(Dispatchers.Main) {
                 _imageList.value = images
