@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DeptEpicChallenge</string>
+
+    <string name="daily_images">Daily Images</string>
+
+    <string name="start_downloading">Start Downloading</string>
+    <string name="downloading_images">Downloading Images</string>
+    <string name="play_images">Play Images</string>
+</resources>
